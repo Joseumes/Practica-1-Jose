@@ -1,0 +1,179 @@
+.Fondo{
+    background-color: rgb(197, 194, 193);
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1,h2 {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 97%;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    color:aliceblue
+}
+
+.container:hover {
+    background-color: rgb(147, 146, 146);
+    color: rgb(255, 255, 255);
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-title img {
+    height: 40px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff0000;
+    
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    font-size: 18px;
+    padding: 10px;
+}
+
+.hamburger {
+    display: none;
+    font-size:35px;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 10px;
+}
+
+.texto {
+    color: rgb(255, 0, 0);
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery-item {
+    width: 350px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.gallery-item img {
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
+
+.gallery-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ff0000;
+}
+
+
+@media (max-width: 767px) {
+    .menu {
+        display: none;
+        flex-direction:column;
+        width: 100%;
+        background-color: rgb(224, 224, 251);
+        position: absolute;
+        top: 70px;
+        left: 0;
+        box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.5);
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .menu a {
+        text-align: center;
+        padding: 15px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .gallery-item {
+        max-width: 100%;
+    }
+}
+
+.content {
+    padding-top: 100px; 
+}
+
+
+
+.recetas-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+.receta {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+}
+.receta h3 {
+    color: #d9534f;
+}
