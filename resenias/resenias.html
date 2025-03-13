@@ -15,53 +15,81 @@
     <meta name="twitter:site" content="@restaurantejose">
     <title>Practica#1 - Restaurante Jose</title>
     <link rel="icon" href="../imagenes/faicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="Fondo">
+    <div class="container">
+        <div class="logo-title">
+            <img src="../imagenes/faicon.png" alt="Logo del restaurante">
+            <h1 class="title">Restaurante Jose</h1>
+        </div>
+        <div class="menu" id="menu">
+            <a href="../index.html">Paguina Principal</a>
+            <a href="../menu/postres.html">Postres</a>
+            <a href="../menu/platos-fuertes.html">Platos Fuertes</a>
+            <a href="../personal/personal.html">Nuestro Personal</a>
+            <a href="../resenias/resenias.html">Reseñas</a>
+            <a href="../recetas/recetas-dulces.html">Recetas Dulces</a>
+            <a href="../recetas/recetas-saladas.html">Recetas Saladas</a>
+        </div>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+    </div>
     <h1>Reseñas de Nuestros Clientes</h1>
     
     <h2>Opiniones sobre nuestra comida y servicio</h2>
     
-    <div>
+    <div class="reseñas-container">
+    <div class="reseña">
         <p><b>Juan Pérez:</b> "La comida es espectacular, el mejor restaurante en el que he estado."</p>
     </div>
     
-    <div>
+    <div class="reseña">
         <p><b>María Magdalena:</b> "Excelente servicio y atención, sin duda volveré pronto."</p>
     </div>
     
-    <div>
+    <div class="reseña">
         <p><b>Carlos Juarez:</b> "El pastel de chocolate es simplemente delicioso, lo recomiendo totalmente."</p>
     </div>
     
-    <div>
+    <div class="reseña">
         <p><b>Ana Marinera:</b> "Un ambiente acogedor y una comida que deleita el paladar."</p>
     </div>
     
-    <div>
+    <div class="reseña">
         <p><b>Pedro Lopez:</b> "Los postres son increíbles, nunca había probado algo tan bueno."</p>
     </div>
     
-    <div>
+    <div class="reseña">
         <p><b>Laura perez:</b> "Definitivamente el mejor lugar para disfrutar una cena especial."</p>
     </div>
     
-    <div>
+    <div class="reseña">
         <p><b>Jose Lopez:</b> "Cada plato tiene un sabor auténtico y único, una experiencia inigualable."</p>
     </div>
     
-    <div>
+    <div class="reseña">
         <p><b>Danuela mus:</b> "Me encantó la atención personalizada, se preocupan por cada detalle."</p>
     </div>
     
-    <div>
+    <div class="reseña">
         <p><b>Richar Waterson:</b> "Un lugar perfecto para compartir en familia y disfrutar de la mejor comida."</p>
     </div>
     
-    <div>
+    <div class="reseña">
         <p><b>Steven Melgar:</b> "Increíble sabor y presentación, sin duda uno de mis restaurantes favoritos."</p>
     </div>
-    
-    <hr>
-    <a href="../index.html"><h2>Volver a INICIO</h2></a>
+    </div>
+    <footer class="footer">
+        <p class="texto">&copy; 2025 Restaurante Jose. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const menu = document.getElementById('menu');
+
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
