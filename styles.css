@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    padding-top: 90px;
 }
 
 h1,h2 {
@@ -21,7 +22,7 @@ img {
 
 a {
     text-decoration: none;
-    color: #000000;
+    color: #8B0000;
 }
 
 a:hover {
@@ -38,12 +39,18 @@ a:hover {
     background-color: rgb(255, 255, 255);
     padding: 10px 20px;
     transition: background-color 0.5s ease, color 0.5s ease;
-    color:aliceblue
+    color:aliceblue;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    
+    
 }
 
 .container:hover {
     background-color: rgb(147, 146, 146);
     color: rgb(255, 255, 255);
+    /* border-radius: 10px; */
 }
 
 .logo-title {
@@ -65,12 +72,22 @@ a:hover {
 
 .menu {
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap; 
+    gap: 10px;
+    justify-content: center;
 }
 
 .menu a {
-    font-size: 18px;
-    padding: 10px;
+    font-size: 16px;
+    padding: 8px;
+    border: 2px solid #8B0000; 
+    border-radius: 5px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+.menu a:hover {
+    background-color: #8B0000;
+    color: white;
 }
 
 .hamburger {
@@ -86,6 +103,7 @@ a:hover {
     background-color: rgb(0, 0, 0);
     color: white;
     padding: 10px;
+    
 }
 
 .texto {
@@ -144,8 +162,10 @@ a:hover {
 
     .menu a {
         text-align: center;
-        padding: 15px;
-        border-bottom: 1px solid #ccc;
+        padding: 10px;
+        font-size: 14px;
+        width: 90%;
+        margin: 0 auto;
     }
 
     .gallery-item {
@@ -154,7 +174,7 @@ a:hover {
 }
 
 .content {
-    padding-top: 100px; 
+    padding-top: 30px; 
 }
 
 
@@ -194,6 +214,7 @@ a:hover {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     max-width: 300px;
     text-align: left;
+    min-height: 120px;
 }
 
 .reseña p {
