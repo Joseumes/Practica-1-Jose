@@ -1,3 +1,48 @@
+<?php
+$archivo = file_get_contents('../recetas/recetas-saladas.txt');
+if ($archivo === false) {
+    echo "Error: No se pudo cargar el archivo recetas-dulces.txt";
+    exit;
+}
+$recetas = explode("===", $archivo);
+
+function formatearReceta($bloque) {
+
+    $lineas = explode("\n", $bloque);
+    $titulo = '';
+    $descripcion = '';
+    $ingredientes = '';
+    $preparacion = '';
+
+    foreach ($lineas as $linea) {
+        if (strpos($linea, 'Título:') === 0) {
+            $titulo = trim(substr($linea, strlen('Título:')));
+        } elseif (strpos($linea, 'Descripción:') === 0) {
+            $descripcion = trim(substr($linea, strlen('Descripción:')));
+        } elseif (strpos($linea, 'Ingredientes:') === 0) {
+            $ingredientes = trim(substr($linea, strlen('Ingredientes:')));
+        } elseif (strpos($linea, 'Preparación:') === 0) {
+            $preparacion = trim(substr($linea, strlen('Preparación:')));
+        }
+    }
+    return '
+    <div class="receta">
+        <h3>' . htmlspecialchars($titulo) . '</h3>
+        <p>' . htmlspecialchars($descripcion) . '</p>
+        <h4>Ingredientes:</h4>
+        <ul>
+            <li>' . str_replace(', ', '</li><li>', htmlspecialchars($ingredientes)) . '</li>
+        </ul>
+        <h4>Preparación:</h4>
+        <ol>
+            <li>' . str_replace('. ', '</li><li>', htmlspecialchars($preparacion)) . '</li>
+        </ol>
+    </div>';
+}
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -35,40 +80,25 @@
         </div>
         <div class="hamburger" id="hamburger">&#9776;</div>
     </div>
-
     <div class="content">
-    <h1>Platos Fuertes del Restaurante Jose</h1>
-    <h2>Disfruta de nuestros deliciosos platos fuertes</h2>
+    <h1>Recetas Saladas del Restaurante Jose</h1>
+    <h2>Descubre nuestras mejores recetas saladas</h2>
     </div>
-    <div class="platos-container">
-    <div class="chef-box">
-        <img src="../imagenes/carne-asada.jpg" alt="Carne Asada" width="400px">
-        <h3>Carne Asada</h3>
-        <p>Jugosa carne asada acompañada de papas fritas y ensalada.</p>
-        <p><b>Precio:</b> Q35.00</p>
+    <div class="recetas-container">
+        <?php
+        
+        $i = 1;
+        foreach ($recetas as $receta) {
+            echo "<!-- Receta #$i -->\n"; 
+            echo formatearReceta($receta);
+            $i++;
+        }
+        ?>
     </div>
+
     
-    <div class="platos-box">
-        <img src="../imagenes/pollo-guisado.jpg" alt="Pollo Guisado" width="400px">
-        <h3>Pollo Guisado</h3>
-        <p>Delicioso pollo guisado con arroz, frijoles y tortillas.</p>
-        <p><b>Precio:</b> Q30.00</p>
-    </div>
-    
-    <div class="platos-box">
-        <img src="../imagenes/pasta_marinera.jpg" alt="Pasta Marinera" width="400px">
-        <h3>Pasta Marinera</h3>
-        <p>Exquisita pasta con mariscos frescos en salsa de tomate.</p>
-        <p><b>Precio:</b> Q40.00</p>
-    </div>
-    
-    <div class="platos-box">
-        <img src="../imagenes/filete-de-pescado.jpg" alt="Filete de Pescado" width="400px">
-        <h3>Filete de Pescado</h3>
-        <p>Filete de pescado a la plancha con verduras salteadas.</p>
-        <p><b>Precio:</b> Q38.00</p>
-    </div>
-    </div>
+
+
     <footer class="footer">
         <p class="texto">&copy; 2025 Restaurante Jose. Todos los derechos reservados.</p>
     </footer>
@@ -81,7 +111,6 @@
             menu.classList.toggle('active');
         });
     </script>
-
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </html>

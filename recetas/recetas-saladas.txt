@@ -1,0 +1,24 @@
+Título: Lasaña Clásica
+Descripción: Una deliciosa lasaña con carne molida, salsa bechamel y queso gratinado.
+Ingredientes: 500g de carne molida, 12 láminas de pasta para lasaña, 500ml de salsa bechamel, 200g de queso rallado, sal y pimienta al gusto
+Preparación: Cocinar la carne molida con sal y pimienta. Cocer las láminas de pasta según las instrucciones del paquete. Alternar capas de pasta, carne y salsa en un recipiente para horno. Agregar queso rallado en la parte superior. Hornear a 180°C por 30 minutos.
+===
+Título: Pollo a la Cacerola
+Descripción: Jugoso pollo cocinado con verduras y especias en una rica salsa.
+Ingredientes: 1 pollo troceado, 2 zanahorias en rodajas, 1 cebolla picada, 2 dientes de ajo, 1 taza de caldo de pollo
+Preparación: Dorar el pollo en una cacerola con un poco de aceite. Agregar la cebolla, ajo y zanahoria y cocinar por 5 minutos. Añadir el caldo de pollo y cocinar a fuego lento por 40 minutos. Servir caliente acompañado de arroz o puré de papas.
+===
+Título: Tacos al Pastor
+Descripción: Tradicionales tacos mexicanos con carne de cerdo marinada y piña.
+Ingredientes: 500g de carne de cerdo en tiras, 1/2 taza de jugo de piña, 2 cucharadas de achiote, 8 tortillas de maíz, cilantro y cebolla picada
+Preparación: Marinar la carne con jugo de piña y achiote por 2 horas. Cocinar la carne en una sartén caliente. Servir en tortillas con cilantro y cebolla.
+===
+Título: Paella Valenciana
+Descripción: Un arroz delicioso con mariscos, pollo y una mezcla de especias.
+Ingredientes: 2 tazas de arroz, 200g de mariscos variados, 1 pechuga de pollo en trozos, 1 pimiento rojo en tiras, 4 tazas de caldo de pescado
+Preparación: Sofreír el pollo y el pimiento en una paellera. Agregar el arroz y remover bien. Verter el caldo caliente y cocinar a fuego medio. Cuando el arroz esté casi listo, añadir los mariscos. Cocinar por 5 minutos más y servir caliente.
+===
+Título: Hamburguesa Artesanal
+Descripción: Jugosa hamburguesa de res con queso derretido, vegetales frescos y salsa especial.
+Ingredientes: 500g de carne molida de res, 4 panes de hamburguesa, 4 rodajas de queso cheddar, lechuga, tomate y cebolla, salsa de tu elección
+Preparación: Formar las hamburguesas con la carne molida. Cocinar en una parrilla caliente hasta el punto deseado. Colocar el queso sobre la carne y dejar que se derrita. Servir en los panes con los vegetales y la salsa.

@@ -1,0 +1,24 @@
+Título: Brownies de Chocolate
+Descripción: Brownies caseros con un sabor intenso a chocolate y textura suave.
+Ingredientes: 200g de chocolate negro, 150g de mantequilla, 3 huevos, 200g de azúcar, 100g de harina
+Preparación: Derretir el chocolate con la mantequilla. Batir los huevos con el azúcar y añadir la mezcla de chocolate. Incorporar la harina y mezclar bien. Hornear a 180°C por 25 minutos.
+===
+Título: Tarta de Manzana
+Descripción: Una clásica tarta con manzanas caramelizadas y masa crujiente.
+Ingredientes: 3 manzanas, 100g de azúcar, 1 masa para tarta, 1 cucharadita de canela
+Preparación: Pelar y cortar las manzanas en rodajas. Colocarlas en la masa y espolvorear con azúcar y canela. Hornear a 180°C por 30 minutos.
+===
+Título: Galletas de Avena
+Descripción: Galletas saludables con un toque crujiente y dulce.
+Ingredientes: 200g de avena, 100g de azúcar moreno, 1 huevo, 50g de mantequilla
+Preparación: Mezclar todos los ingredientes hasta obtener una masa homogénea. Formar pequeñas bolitas y colocarlas en una bandeja. Hornear a 180°C por 15 minutos.
+===
+Título: Flan de Caramelo
+Descripción: Un postre suave con un delicioso caramelo en la base.
+Ingredientes: 500ml de leche, 4 huevos, 150g de azúcar, 1 cucharadita de esencia de vainilla
+Preparación: Caramelizar el azúcar y verter en un molde. Mezclar la leche con los huevos y la vainilla. Verter la mezcla en el molde y hornear a baño maría por 50 minutos.
+===
+Título: Helado de Fresa
+Descripción: Helado cremoso con un intenso sabor a fresa.
+Ingredientes: 500g de fresas, 200ml de crema de leche, 100g de azúcar
+Preparación: Triturar las fresas con el azúcar. Incorporar la crema y mezclar bien. Congelar por al menos 4 horas, removiendo cada 30 minutos.
