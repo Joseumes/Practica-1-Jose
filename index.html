@@ -16,9 +16,10 @@
     <title>Practica#1 - Restaurante Jose</title>
     <link rel="icon" href="imagenes/faicon.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body class="Fondo">
-    <div class="container">
+    <div class="container  ">
         <div class="logo-title">
             <img src="imagenes/faicon.png" alt="Logo del restaurante">
             <h1 class="title">Restaurante Jose</h1>
@@ -31,7 +32,13 @@
             <a href="resenias/resenias.html">Reseñas</a>
             <a href="recetas/recetas-dulces.html">Recetas Dulces</a>
             <a href="recetas/recetas-saladas.html">Recetas Saladas</a>
-            
+            <a href="Reservas/reservaciones.php">Reservaciones</a>
+
+            <button class="botton" type="button"  data-bs-toggle="modal" data-bs-target="#modalReserva">
+                Nueva Reserva
+            </button>
+
+           
         </div>
         <div class="hamburger" id="hamburger">&#9776;</div>
     </div>
@@ -74,6 +81,44 @@
         <p class="imgitem" style="content: none;"><img src="imagenes/chef_profesional.jpg" height="100px" align="middle"> Nuestro chef principal tiene más de 20 años de experiencia en gastronomía internacional.</p>
     </div>
 
+
+
+    <div class="modal fade" id="modalReserva"  >
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalReservaLabel">Nueva Reserva</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="Reservas/guardar-reserva.php" method="POST">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre completo:</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label">Teléfono:</label>
+                            <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Ingrese su teléfono" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="fecha" class="form-label">Fecha de reserva:</label>
+                            <input type="date" class="form-control" id="fecha" name="fecha" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="hora" class="form-label">Hora de reserva:</label>
+                            <input type="time" class="form-control" id="hora" name="hora" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="descripcion" class="form-label">Descripción:</label>
+                            <textarea rows="4" class="form-control" id="descripcion" name="descripcion" placeholder="Ingrese una descripción de lo que necesita..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Reservar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer class="footer">
         <p class="texto">© 2025 Restaurante Jose. Todos los derechos reservados.</p>
     </footer>
@@ -87,4 +132,5 @@
         });
     </script>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </html>
